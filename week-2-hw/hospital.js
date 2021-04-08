@@ -18,7 +18,7 @@ module.exports = class Hospital{
             doctor.hospital = this.name
             doctor.examination_capacity = 2
             doctor.patients = []
-            doctor.patients_capacity = 10
+            
                         
         }
         else {
@@ -33,7 +33,7 @@ module.exports = class Hospital{
             if( proper_doctors.length>0 ){            
                 for (var i in proper_doctors){
                     var doctor = proper_doctors[i]
-                    if ( doctor.examination_capacity != 0 && doctor.patients_capacity !=0 ){
+                    if ( doctor.examination_capacity != 0 ){
                         this.attend_patient_to_doctor( doctor, patient)
                         console.log(Chalk.bgGreen("patient "+patient.name+" attend to Dr. "+doctor.name))
                         return true
@@ -61,7 +61,6 @@ module.exports = class Hospital{
         doctor.patients.push(patient)
         this.patients.push(patient)
         doctor.examination_capacity-=1
-        doctor.patients_capacity-=1
         patient.doctor = doctor.name
         
     }
@@ -80,12 +79,6 @@ module.exports = class Hospital{
         }
         return proper_doctors
 
-    }
-    
-    
-
-    
-    
-    
+    }  
     
 }
