@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Armagan",
+    "age": 34,
+    "meetups": [
+      "Women Tech Makers Berlin"
+    ],
+    "id": 2
+  },
+  {
+    "name": "egemen",
+    "age": 24,
+    "meetups": [],
+    "id": 3
+  },
+  {
+    "name": "levent",
+    "age": 23,
+    "meetups": [],
+    "id": 4
+  },
+  {
+    "name": "mubi",
+    "age": 25,
+    "meetups": [],
+    "id": 5
+  },
+  {
+    "name": "mubi",
+    "age": 25,
+    "id": 6
+  }
+]
